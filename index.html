@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .food-options {
+            margin-bottom: 20px;
+        }
+        .food-options label {
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        p {
+            font-size: 14px;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 20px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #box {
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        ol{
+            text-align: center;
+            list-style: none;
+           
+        }
+        li {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>UserName :</label>
+        <input id="name" type="text">
+        <br><br>
+        <label>Age :</label>
+        <input id="age" type="number">
+        <br><br>
+        <label>Gender (male/female) :</label>
+        <input id="gender" type="text"> <br>
+        <p>Type of Food :</p>
+        <input id="rd1" type="radio" name="food" value="shawerma">
+        <label>Shawerma</label>
+        <input id="rd2" type="radio" name="food" value="zinger">
+        <label>Zinger</label>
+        <input id="rd3" type="radio" name="food" value="burger">
+        <label>Burger</label>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <div id="box"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
